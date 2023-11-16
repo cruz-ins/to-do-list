@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Primeira Caixa, incluirLista -->
+        <div class="adicionar">
+            <h1>Lista de Compras</h1>
+            <!-- Nome do Item -->
+            <span class="produto">
+                <label for="nomeProduto">Nome do Produto</label>
+                <input type="text" id="nomeProduto" placeholder="Nome do Produto">
+            </span>
+            <!-- Valor do Item -->
+            <span class="valor">
+                <label for="valorProduto">Valor do Produto</label>
+                <input type="number" id="valorProduto" placeholder="Valor do Produto">
+            </span>
+            <!-- Botão para incluir item -->
+            <button onclick="incluirLista()" class="botao">Adicionar</button>  
+        </div>
+        <!-- Segunda Caixa, exibirLista e Selecionar itens -->
+        <div class="lista">
+            <!--Selecionar itens -->
+            <div class="contentListaItem">
+                <h2>Lista</h2>
+                <input type="text" id="select" placeholder="Buscar Produto">
+            </div>
+            <!-- exibir Lista -->
+            <div class="contentBody">
+                <ul id="to-do-list">
+                </ul>
+            </div>
+        </div>
+        <!-- Terceira Caixa, exibir Valor e resetar lista -->
+        <div class="total">
+            <h2>Total: R$</h2>
+            <h2 id="totalPrice">0.00</h2>
+            <button onclick="apagarLista()" class="botao">Limpar Lista</button>
+        </div>
+
+    </div>
+</body>
+</html>

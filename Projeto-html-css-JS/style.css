@@ -1,0 +1,61 @@
+body {
+    background: linear-gradient(to bottom, rgb(29, 173, 153), rgb(52, 232, 130));
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.adicionar, .lista, .total {
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    grid-template-columns: 5fr 5fr;
+}
+
+#to-do-list{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0;
+}
+
+#to-do-list li{
+    list-style-type: none;
+    font-size: 22px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.botao {
+    background-color: blue;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    color:aliceblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+.botao2 {
+    background-color: rgba(62, 62, 63, 0.829);
+    padding: 10px;
+    border-radius: 20px;
+    color:aliceblue;
+    font-weight: bold;
+}
